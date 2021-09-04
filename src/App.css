@@ -1,0 +1,79 @@
+*{
+  box-sizing: border-box;
+  padding:0;
+  margin: 0;
+}
+
+.App {
+  margin-top: 10px;
+  max-width: 500px;
+  margin: auto;
+  padding:30px;
+  /* text-align: center; */
+  border-width: 2px;
+  border-color: rgb(82, 159, 231);
+  border-radius: 2px;
+  border-style: solid;
+}
+
+
+header {
+  min-height: 20vh;
+  background-color: none;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+header .btn {
+  background-color: GREEN;
+  color: white;
+  font-weight: 400;
+}
+
+.task {
+  background-color: rgb(220, 226, 231);
+  margin: 5px;
+  padding-left:15px;
+  padding-right: 15px;
+  cursor: pointer;
+  position: relative;
+  padding-top: 5px;
+}
+
+.task button {
+  float: right;
+  /* right: 10px; */
+}
+
+.task h3 {
+  font-size: 22px;
+}
+
+.reminder::before {
+  position:absolute;
+  top: 0;
+  left:0;
+  content: " ";
+  /* float: left; */
+  /* background-color: green; */
+  height: 100%;
+  border: solid green 2px;
+}
+
+/* form Style */
+form {
+  margin: 20px;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
