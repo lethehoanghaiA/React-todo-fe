@@ -21,14 +21,14 @@ function App() {
 
 	//fetch task
 	const fetchTasks = async () => {
-		const res = await fetch('http://localhost:5000/tasks');
+		const res = await fetch('/tasks');
 		const data = await res.json();
 		return data;
 	}
 
 	//get a Task from server (to Update)
 	const fetchATask = async (id) => {
-		const res = await fetch(`http://localhost:5000/tasks/${id}`);
+		const res = await fetch(`/tasks/${id}`);
 		const data = await res.json();
 		return data;
 	}
@@ -36,7 +36,7 @@ function App() {
 	//8.2 Adding event. min 51.58
 	//create event function here and pass down like a props
 	const deleteTask = async (id) => {
-		await fetch(`http://localhost:5000/tasks/${id}`, {
+		await fetch(`/tasks/${id}`, {
 			method: 'DELETE'
 		})
 
@@ -48,7 +48,7 @@ function App() {
 		let taskToToggle = await fetchATask(id);
 		taskToToggle.reminder = !taskToToggle.reminder;
 		
-		const res = await fetch(`http://localhost:5000/tasks/${id}`, 
+		const res = await fetch(`/tasks/${id}`, 
 			{
 				method:'PUT',
 				headers: {'Content-type' : 'application/json'},
@@ -67,7 +67,7 @@ function App() {
     //add task funtuon
     const addTask = async (task) => {
 		const res = 
-			await fetch('http://localhost:5000/tasks',
+			await fetch('/tasks',
 						{
 							method:'POST',
 							headers:{
