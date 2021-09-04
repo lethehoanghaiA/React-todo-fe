@@ -1,28 +1,16 @@
 {
   "tasks": [
     {
-      "id": 3,
-      "text": "learn programming",
-      "day": "Jan 15 at 9a.m",
-      "reminder": true
-    },
-    {
-      "id": 4,
-      "text": "code project",
-      "day": "feb 12 at 10a.m",
-      "reminder": false
-    },
-    {
-      "text": "code interview",
-      "day": "August 10 at 9 a.m",
-      "reminder": false,
-      "id": 5
-    },
-    {
       "text": "A new Task",
       "day": "December Monday 12th",
       "reminder": false,
       "id": 7
+    },
+    {
+      "text": "hello kitty",
+      "day": "",
+      "reminder": false,
+      "id": 8
     }
   ]
 }
